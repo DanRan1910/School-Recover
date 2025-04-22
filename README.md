@@ -1,1 +1,1 @@
-# School-Recover
+# SchoolRecovery
