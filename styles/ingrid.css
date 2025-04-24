@@ -103,15 +103,6 @@
     background-color: var(--light-background-color);
 }
 
-.review{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 100px 195px;
-    background-color: var(--light-background-color);
-}
-
 .team-informations{
     display: flex;
     flex-direction: column;
@@ -201,8 +192,45 @@
 
 /*------------------Responsive------------------*/
 
+@media (max-width: 835px){
+    /* ----------------Section Review---------------- */
+    .review{
+        padding: 50px;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .cards{
+        width: 95%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        gap: 0;
+    }
+    .cards-review{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* ----------------Section Team---------------- */
+    .team{
+        padding: 50px;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    .team-cards{
+        width: 95%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .team-cards-infos-personal{
+        padding: 20px;
+    }
+    .team-cards-infos-personal h3{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
 @media (max-width: 500px){
-/* ----------------Section Review---------------- */
+    /* ----------------Section Review---------------- */
     .review{
         padding: 30px;
         width: 84%;
@@ -218,7 +246,36 @@
         line-height: 30px;
     }
     .review-informations p{
+        width: 80%;
         font-size: 12px;
     }
-/* ----------------Section Team---------------- */
+    /* ----------------Section Team---------------- */
+    .team{
+        padding: 30px;
+        width: 84%;
+        align-items: flex-start;
+        gap: 60px;
+        
+    }
+    .team-informations{
+        width: 84%;
+        gap: 5px;
+    }
+    .team-informations h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .team-informations p{
+        width: 80%;
+        font-size: 12px;
+    }
+    .team-cards{
+        flex-direction: column; 
+        margin: auto;
+        width: 75%;
+    }
+    .team-cards-infos{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
